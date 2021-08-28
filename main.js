@@ -36,20 +36,20 @@ function firstElem(i) {
     clientsCard[1].classList.add('clients__card-second');
     clientsCard[i].classList.remove('clients__card-first');
     arrowRight.style.transform = 'rotate(0deg)';
-    arrowRight.src = '/img/arrowRight.png';
+    arrowRight.src = './img/arrowRight.png';
     arrowRight.style.cursor = 'pointer';
     arrowLeft.style.transform = 'rotate(0deg)';
     arrowLeft.style.cursor = 'auto';
-    arrowLeft.src = '/img/arrowLeft.png';
+    arrowLeft.src = './img/arrowLeft.png';
 }
 function secondElem(i) {
     clientsCard[0].classList.add('clients__card-first');
     clientsCard[i].classList.remove('clients__card-second');
     arrowLeft.style.transform = 'rotate(180deg)';
-    arrowLeft.src = '/img/arrowRight.png';
+    arrowLeft.src = './img/arrowRight.png';
     arrowLeft.style.cursor = 'pointer';
     arrowRight.style.transform = 'rotate(180deg)';
-    arrowRight.src = '/img/arrowLeft.png';
+    arrowRight.src = './img/arrowLeft.png';
     arrowRight.style.cursor = 'auto';
 }
 
@@ -77,12 +77,12 @@ function clicks(event) {
     const targ =  event.target;
     if (targ.classList.contains('plus')) {
         showText(targ.parentElement);
-	    targ.src = '/img/minus.svg';
+	    targ.src = './img/minus.svg';
         targ.classList.remove('plus');
         
     } else {
         console.log(1)
-        targ.src = '/img/plus.svg';
+        targ.src = './img/plus.svg';
         targ.classList.add('plus');
         hideAll(targ.parentElement)
     }
